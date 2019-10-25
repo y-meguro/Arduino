@@ -29,4 +29,5 @@ void loop() {
 
   PORTC = (PORTC & B11110000) | (rom[addr] & B00001111);
   PORTB = (PORTB & B11110000) | ((rom[addr] & B11110000)>>4);
+  delay(100);
 }
